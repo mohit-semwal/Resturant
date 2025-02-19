@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px){
+    .hero{
+        font-size: 10vw !important;
+    }
+}
+@media only screen and (max-width: 991px){
+    .mypara{
+        font-size: 1.2rem !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    .about-btn{
+        width: 10rem !important;
+    }
+}
+@media only screen and (max-width: 576px){
+    .manu-span{
+        display: none !important;
+    }
+    .fitures-icons-container{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 570px){
+  .carousel-img{
+   width: 45rem !important;
+  }
+}

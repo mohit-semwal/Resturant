@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hero-section {
+    width: 93vw;
+    margin: auto;
+}
+
+
+.navbar-brand {
+    color: orange !important;
+    font-size: 6vh !important;
+}
+
+.navbar-brand span:hover {
+    color: orange !important;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 85vh;
+}
+
+.btn1 {
+    background-color: orange !important;
+    border-radius: 12px;
+    padding: 1rem !important;
+    color: White !important;
+}
+
+#btn2 {
+    border-radius: 12px;
+    color: White !important;
+}
+
+.btn1:hover {
+    background-color: transparent !important;
+    border: 2px solid orange !important;
+    color: orange !important;
+
+}
+
+#btn2:hover {
+    background-color: transparent;
+    border: 2px solid rgb(17, 120, 22);
+    color: rgb(17, 120, 22)!important;
+}
+
+.images {
+    overflow: hidden;
+}
+
+.images img {
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+}
+
+.fitures-icons i {
+    color: orange;
+}
+.view-Menu{
+    color: orange
+}
+.view-Menu:hover{
+    color: rgb(77, 164, 40)
+}
+
+.cards-div {
+    background-color: lightgray;
+    margin-top: 6rem !important;
+    margin: 45px 0;
+    padding: 90px 0 60px 0;
+}
+
+.feature-card {
+    border-radius: 25px !important;
+    height: 40vh !important;
+}
+
+.feature-card i {
+    color: orange;
+    font-size: 3rem;
+}
+
+.chef-div {
+    padding: 20px 0 60px 0;
+}
+
+
+
+.card-icon i {
+    display: none !important;
+    color: white;
+    background-color: orange;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.chef-div .card:hover i {
+    display: block !important;
+    /* background-color: red; */
+    animation: myanime 3s linear;
+}
+
+@keyframes myanime {
+    100% {
+        rotate: 360deg;
+
+    }
+
+}
+
+
+
+.chef-div .card {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.chef-div .card:hover {
+    box-shadow: 0px 0px 8px black;
+}
+
+.chef-div img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+}
+
+.chef-div .card:hover img {
+    transform: translateY(-8px);
+}
+
+.clint-div {
+    padding: 70px 0 40px 0px;
+}
+
+.clint-div .card:hover {
+    box-shadow: 0px 0px 8px black;
+}
+.client-img{
+    height: 9rem !important;
+    width: 9rem !important;
+}
+.manu-img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.form-div {
+    background-color: orange;
+    padding: 80px 45px 40px 25px;
+}
+
+.form-div form div input {
+    background-color: transparent !important;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.form-btn:hover {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.blog-img img {
+    border-radius: 25px;
+}
+
+.blog-text-div {
+    padding: 60px 30px 30px 50px;
+    border-radius: 20px;
+    box-shadow: -3px 18px 30px gainsboro;
+
+}
+
+.contact-map-div {
+    padding: 10px 30px 20px 40px;
+
+}
+
+.contact-form-div {
+    padding: 60px 30px 40px 40px;
+}
+.footer-icons i{
+    padding: 0.9rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    color: white; 
+}
+.footer-icons i:hover{
+    background-color: rgb(39, 158, 10);
+}
+.fa-facebook-f{
+padding-left: 16px !important;
+}
+.fa-youtube{
+padding-left: 11px !important;
+}
+.footer-icon i{
+    color: orange;
+}
+.footer-input-div i{
+    position: absolute;
+/* right: 15px; */
+top: 50%;
+}
+.footer-btn{
+position: absolute;
+right: 15px;
+top: 10%;
+}
+.footer-email-input{
+    border: 1px solid orange;
+    outline: none;
+    font-size: 1.2rem;
+}
+.footer-email-input::placeholder{
+    font-size: 1.5rem;
+}
+.footer{
+    height: 35rem;
+  
+}
+.footer-container{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.footer-heading{
+    color: orange;
+}
+.error{
+    display: none;
+}
+.thankYouDiv{
+   position: absolute;
+   top: 7rem;
+   right: 0rem;
+   left: 0rem;
+   display: none;
+
+   
+}
+
+.paymentDiv{
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
+    left: 0rem;
+    padding: 10px 50px;
+    flex-direction: column;
+    box-shadow: -1px 0px 27px -3px rgba(0,0,0,0.87);
+    -webkit-box-shadow: -1px 0px 27px -3px rgba(0,0,0,0.87);
+    -moz-box-shadow: -1px 0px 27px -3px rgba(0,0,0,0.87);
+    display: none;
+   
+}.payTitle{
+    font-size: 30px;
+    color:lightgray;
+}
+label{
+    font-size: 20px;
+    font-weight: 300;
+}
+.payInput{
+padding: 10px;
+margin: 10px 0px;
+border: none;
+border-bottom: 1px solid gray;
+}
+.payInput::placeholder{
+    color: lightgray;
+    font-size: 15px;
+}
+.cardIcons{
+    display: flex;
+}
+.cardIcon{
+    margin-right: 10px;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+  width: 25%;
+}
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    box-shadow: -1px 0px 27px -3px rgba(0,0,0,0.87);
+    -webkit-box-shadow: -1px 0px 27px -3px rgba(0,0,0,0.87);
+    -moz-box-shadow: -1px 0px 27px -3px rgba(0,0,0,0.87);
+    background-color: green;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    margin-top: 1rem;
+    background-color: black;
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}

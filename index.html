@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <header class="sticky-top" style="box-shadow: 0px 0px 10px black;">
+        <nav class="navbar  navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fs-1" href="#">Burger <span class="text-success">King</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3 fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Chef">Chef</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Booking">Booking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#Pages">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#Pages">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Home start -->
+    <section id="Home">
+        <div class="hero-section">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/carousel-1.jpg" class="d-block w-100 carousel-img" alt="carousel-img1">
+                        <div class=" position-absolute top-0 w-100 h-100 "
+                            style="background-color: rgba(0,0,0,0.6) !important;">
+                            <div class="row h-100 d-flex align-items-center">
+                                <div class="col-lg-2"></div>
+                                <div
+                                    class="carousel-text  h-75 col-sm-12 col-md-12 col-lg-8 col-12 text-white text-center d-flex flex-column justify-content-center align-items-center">
+                                    <h1 class="hero" style="font-size: 5vw;">Best <span
+                                            style="color: orange;">Quality</span>
+                                        Ingredients
+                                    </h1>
+                                    <p class="mypara" style="font-size: 2vw;">
+                                        Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas
+                                        eleifend
+                                        dui ac consequat at lectus in malesuada
+                                    </p>
+                                    <div class="d-flex  gap-3 mx-auto ">
+                                        <a href="#" class=" btn text-white text-decoration-none fs-5 btn1"
+                                            style=" border: none; border-radius: 12px;">View Menu</a>
+                                        <a href="#form"
+                                            class="btn text-white btn-success d-flex align-items-center text-decoration-none fs-5"
+                                            id="btn2">Book Table</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/carousel-2.jpg" class="d-block w-100 carousel-img" alt="carousel-img2">
+                        <div class=" position-absolute top-0 w-100 h-100 "
+                            style="background-color: rgba(0,0,0,0.6) !important;">
+                            <div class="row h-100 d-flex align-items-center">
+                                <div class="col-lg-2"></div>
+                                <div
+                                    class="carousel-text  h-75 col-sm-12 col-md-12 col-lg-8 col-12 text-white text-center d-flex flex-column justify-content-center align-items-center">
+                                    <h1 class="hero" style="font-size: 5vw;">World's<span
+                                            style="color: orange;">Best</span>
+                                        Chef</h1>
+                                    <p class="mypara" style="font-size: 2vw;">
+                                        Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi
+                                        sagittis, orci sodales varius fermentum, tortor
+                                    </p>
+                                    <div class="d-flex  gap-3 mx-auto ">
+                                        <a href="#" class=" btn text-white text-decoration-none fs-5 btn1"
+                                            style=" border: none; border-radius: 12px;">View Menu</a>
+                                        <a href="#form"
+                                            class="btn text-white btn-success d-flex align-items-center text-decoration-none fs-5"
+                                            id="btn2">Book Table</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/carousel-3.jpg" class="d-block w-100 carousel-img" alt="carousel-img3">
+                        <div class=" position-absolute top-0 w-100 h-100 "
+                            style="background-color: rgba(0,0,0,0.6) !important;">
+                            <div class="row h-100 d-flex align-items-center">
+                                <div class="col-lg-2"></div>
+                                <div
+                                    class="carousel-text  h-75 col-sm-12 col-md-12 col-lg-8 col-12 text-white text-center d-flex flex-column justify-content-center align-items-center">
+                                    <h1 class="hero" style="font-size: 5vw;">Fastest Order <span
+                                            style="color: orange;">Delivery</span>
+                                    </h1>
+                                    <p class="mypara" style="font-size: 2vw;">
+                                        Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus
+                                        nibh
+                                        ligula euismod quam. Proin pellentesque odio
+                                    </p>
+                                    <div class="d-flex  gap-3 mx-auto ">
+                                        <a href="#" class=" btn text-white text-decoration-none fs-5 btn1"
+                                            style=" border: none; border-radius: 12px;">View Menu</a>
+                                        <a href="#form"
+                                            class="btn text-white btn-success d-flex align-items-center text-decoration-none fs-5"
+                                            id="btn2">Book Table</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home end -->
+
+    <!-- About start -->
+    <section id="About">
+        <div class="container mt-5">
+            <div class="row">
+                <div class=" col-sm-12 col-md-12 col-lg-6 col-12 text-center">
+                    <img class="img-fluid h-auto" src="./Images/about.jpg" alt="about-img" style="border-radius: 25px;">
+
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6  col-12  d-flex flex-column justify-content-center">
+                    <p class="text-success fs-4">About Us</p>
+                    <h1 style="font-size: 7vh;">Cooking Since 1990</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                        facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                        viverra
+                        quis sem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                        facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                        viverra
+                        quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis
+                        porttitor.
+                        Aliquam interdum at lacus non blandit</p>
+                    <a href="#form" class="btn text-white w-25 text-decoration-none fs-5 w-25  btn1 about-btn"
+                        style=" border: none; border-radius: 12px;">Book A Table</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About end -->
+
+    <!-- Features start -->
+    <section id="Features">
+        <div class="container" style="margin-top:4rem !important ;">
+            <div class="row  mx-auto">
+                <div class="col-sm-12 col-md-12  col-lg-6 col-12">
+                    <p class="text-success fs-3">Why Choose Us</p>
+                    <h1 style="padding-top: 0rem;">Our Key Features</h1>
+                    <div class=" feature-img mb-3" style="margin-top: 2.5rem;">
+                        <div class="d-flex images"
+                            style="border-top-left-radius: 20px !important; border-top-right-radius: 20px !important;">
+                            <img class=" w-50" src="./Images/feature-1.jpg" alt="feature-1"
+                                style="border-top-left-radius: 20px !important;">
+                            <img class=" w-50" src="./Images/feature-2.jpg" alt="feature-2"
+                                style="border-top-right-radius: 20px !important;">
+                        </div>
+                        <div class="d-flex images"
+                            style="border-bottom-right-radius: 20px !important; border-bottom-left-radius: 20px !important;">
+                            <img class=" w-50" src="./Images/feature-3.jpg" alt="feature-3"
+                                style="border-bottom-left-radius: 20px !important;">
+                            <img class=" w-50" src="./Images/feature-4.jpg" alt="feature-4"
+                                style="border-bottom-right-radius: 20px !important;">
+                        </div>
+                    </div>
+                    <p class="mb-3">Lorem ipsum dolor sit amet consec adipis elit. Phasel nec preti mi. Curabit facilis
+                        ornare velit non
+                        vulputa. Aliquam metus tortor, auctor id gravida condime, viverra quis sem. Curabit non nisl nec
+                        nisi sceleri maximus</p>
+                    <a href="" class="btn text-white p-2 rounded-2 fs-5 w-100 btn1">Book A Table</a>
+                </div>
+                <div class="col-sm-12  col-md-12 col-lg-6 col-12 d-flex mt-5 fitures-icons-container">
+                    <div class="fitures-icons">
+                        <div class="pt-3">
+                            <i class="fa-solid fa-kitchen-set fs-1"></i>
+                            <h5 class="pt-2">World’s best Chef</h5>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                                metus tortor</p>
+                        </div>
+                        <div class="pt-4">
+                            <i class="fa-solid fa-medal fs-1"></i>
+                            <h5 class="pt-2">Best quality products</h5>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                                metus tortor</p>
+                        </div>
+                        <div class="pt-4">
+                            <i class="fa-solid fa-motorcycle fs-1"></i>
+                            <h5 class="pt-2">Fastest door delivery</h5>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                                metus tortor</p>
+                        </div>
+                    </div>
+                    <div class=" fitures-icons ">
+                        <div class="pt-3">
+                            <i class="fa-solid fa-carrot fs-1"></i>
+                            <h5 class="pt-2">Natural ingredients</h5>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                                metus tortor</p>
+                        </div>
+
+                        <div class="pt-4">
+                            <i class="fa-solid fa-fish fs-1"></i>
+                            <h5 class="pt-2">Fresh vegetables & Meet</h5>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                                metus tortor</p>
+                        </div>
+                        <div class="pt-4">
+                            <i class="fa-solid fa-burger fs-1"></i>
+                            <h5 class="pt-2">Ground beef & Low fat</h5>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                                metus tortor</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row cards-div ">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12  ">
+                    <div class="card feature-card text-center  w-100 mb-4 ">
+                        <div class="card-body d-flex flex-column justify-content-center ">
+                            <i class="fa-solid fa-burger"></i>
+                            <h1 class="card-title">Burgers</h1>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="view-Menu">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 d-flex justify-content-center align-items-center">
+                    <div class="card feature-card text-center w-100 mb-4">
+                        <div class="card-body d-flex flex-column justify-content-center ">
+                            <i class="fa-solid fa-cookie"></i>
+                            <h1 class="card-title">Snacks</h1>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="view-Menu">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 d-flex justify-content-center align-items-center">
+                    <div class="card feature-card text-center w-100">
+                        <div class="card-body d-flex flex-column justify-content-center ">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            <h1 class="card-title">Beverages</h1>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="view-Menu">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+            </div>
+    </section>
+    <!-- Features end -->
+
+    <!-- Chef start -->
+    <section id="Chef" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="text-center">
+                <p class="fs-2 mb-0 text-success ">Our Team</p>
+                <h1>Our Master Chef</h1>
+            </div>
+            <div class="row chef-div  d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-6 col-12 col-lg-3  mb-4">
+                    <div class="card w-100 h-100 text-center position-relative">
+                        <img src="./Images/team-1.jpg" class="card-img-top img-fluid " alt="chef-1">
+                        <div class="card-body">
+                            <h2 class="card-title">Adam Phillips</h2>
+                            <p class="card-text fs-5">CEO, Co Founder</p>
+                        </div>
+                        <div
+                            class="card-icon w-100 h-100 position-absolute animate__animated animate__flip  fs-3  d-flex  justify-content-center align-items-center gap-3 ">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-12 col-lg-3 mb-4">
+                    <div class="card w-100 h-100 text-center ">
+                        <img src="./Images/team-2.jpg" class="card-img-top img-fluid" alt="chef-2">
+                        <div class="card-body">
+                            <h2 class="card-title">Dylan Adams</h2>
+                            <p class="card-text fs-5">Master Chef</p>
+                        </div>
+                        <div
+                            class="card-icon w-100 h-100 position-absolute animate__animated animate__flip  fs-3  d-flex  justify-content-center align-items-center gap-3 ">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-12 col-lg-3 mb-4">
+                    <div class="card h-100 w-100 text-center ">
+                        <img src="./Images/team-3.jpg" class="card-img-top" alt="chef-3">
+                        <div class="card-body">
+                            <h2 class="card-title">Jhon Doe</h2>
+                            <p class="card-text fs-5">Master Chef</p>
+                        </div>
+                        <div
+                            class="card-icon w-100 h-100 position-absolute animate__animated animate__flip  fs-3  d-flex  justify-content-center align-items-center gap-3 ">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-12 col-lg-3 mb-4">
+                    <div class="card  h-100 w-100 text-center">
+                        <img src="./Images/team-4.jpg" class="card-img-top" alt="chef-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Josh Dunn</h2>
+                            <p class="card-text fs-5">Master Chef</p>
+                        </div>
+                        <div
+                            class="card-icon w-100 h-100 position-absolute animate__animated animate__flip  fs-3  d-flex  justify-content-center align-items-center gap-3 ">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row clint-div " style="background-color: lightgray">
+                <div class="col-sm-12 col-md-12 col-12 col-lg-4 mb-4">
+                    <div class="card  text-center">
+                        <div class="card-body">
+                            <img src="./Images/testimonial-1.jpg" class="client-img  rounded-circle mb-3" alt="chef-4">
+                            <p class="card-text ">
+                                Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                            </p>
+                            <h2 class="card-title">Client Name</h2>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-12  col-lg-4 mb-4">
+                    <div class="card   text-center">
+                        <div class="card-body">
+                            <img src="./Images/testimonial-3.jpg" class="client-img rounded-circle mb-3" alt="chef-4">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                            </p>
+                            <h2 class="card-title">Client Name</h2>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-12  col-lg-4 mb-4">
+                    <div class="card   text-center">
+                        <div class="card-body">
+                            <img src="./Images/testimonial-4.jpg" class=" client-img rounded-circle  mb-3" alt="chef-4">
+                            <p class="card-text ">
+                                Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non
+                                vulput
+                            </p>
+                            <h2 class="card-title">Client Name</h2>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chef end -->
+
+    <!-- Menu start -->
+    <section id="Menu" class="mt-5">
+        <div class="container  " style="padding-top: 3rem;">
+            <div class=" text-center">
+                <p class="text-success fs-3 mb-0">Food Menu</p>
+                <h1>Delicious Food Menu</h1>
+            </div>
+            <div class="bttn text-center mt-5 ">
+                <a href="" class="btn bg-success p-2 fs-4 " style="width: 9rem;">Burgers</a>
+                <a href="" class="btn bg-warning p-2 fs-4" style="width: 9rem;">Snacks</a>
+                <a href="" class="btn bg-warning p-2 fs-4" style="width: 9rem;">Beverages</a>
+            </div>
+            <div class="row mt-5">
+                <div class=" col-sm-12 col-md-12 col-lg-6 col-12">
+                    <div class="d-flex align-items-center mb-4">
+                        <div>
+                            <img src="./Images/menu-burger-img.jpg" class="rounded-circle manu-img" alt="">
+                        </div>
+                        <div class="px-3">
+                            <h4 class="">Mini cheese Burger <span
+                                    class="manu-span">.........................................</span> <span
+                                    style="color: orange;">$9.00</span></h4>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti faci</p>
+
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div>
+                            <img src="./Images/menu-burger-img.jpg" class="rounded-circle manu-img" alt="">
+                        </div>
+                        <div class="px-3">
+                            <h4 class="">Double size burger <span
+                                    class="manu-span">.........................................</span> <span
+                                    style="color: orange;">$11.00</span></h4>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti faci</p>
+
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div>
+                            <img src="./Images/menu-burger-img.jpg" class="rounded-circle manu-img" alt="">
+                        </div>
+                        <div class="px-3">
+                            <h4 class="">Bacon, EGG and Cheese <span
+                                    class="manu-span">................................</span> <span
+                                    style="color: orange;">$13.00</span></h4>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti faci</p>
+
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div>
+                            <img src="./Images/menu-burger-img.jpg" class="rounded-circle manu-img" alt="">
+                        </div>
+                        <div class="px-3">
+                            <h4 class="">Pulled porx Burger <span
+                                    class="manu-span">.........................................</span> <span
+                                    style="color: orange;">$18.00</span></h4>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti faci</p>
+
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div>
+                            <img src="./Images/menu-burger-img.jpg" class="rounded-circle manu-img" alt="">
+                        </div>
+                        <div class="px-3">
+                            <h4 class="">Fried chicken Burger <span
+                                    class="manu-span">.....................................</span> <span
+                                    style="color: orange;">$22.00</span></h4>
+                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti faci</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12  text-center col-md-12 col-lg-6 col-12">
+                    <img src="./Images/menu-burger-img.jpg" class="img-fluid" alt="menu-burger-img"
+                        style="border-radius: 25px; height: 60vh; ; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu end -->
+
+    <!-- Booking strat -->
+    <section id="Booking" style="background-color: lightgray;">
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-12 col-lg-5 d-flex flex-column  justify-content-center">
+                    <p class="text-success fs-3">Book A Table</p>
+                    <h1 class="mb-5">Book Your Table For Private Dinners & Happy Hours</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                        facilisis
+                        ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis
+                        sem.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                        facilisis
+                        ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis
+                        sem.
+                        Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam
+                        interdum at lacus non blandit.</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-12 col-lg-5">
+                    <div class="form-div h-100 w-100 position-relative">
+                        <form class=" w-100" id="form">
+                            <div>
+
+                                <span id="NameError" class="error" style="color: red;">Please enter your name</span>
+                                <input id="name" class="border border-white mb-4" type="text" placeholder="Name">
+                            </div>
+                            <div>
+                                <span id="emailError" class="error" style="color: red;">Please enter your Email-Id</span>
+                                <input id="email" class="border border-white mb-4" type="email" placeholder="Email">
+                            </div>
+                            <div>
+
+                                <span id="mobileError" class="error" style="color: red;">Please enter your Mobile Number</span>
+                                <input id="mobileNumber" class="border border-white mb-4" type="tel"
+                                    placeholder="Mobile">
+                            </div>
+                            <div>
+
+                                <span id="dateError" class="error" style="color: red;">Please enter your Date</span>
+                                <input id="date" class="border border-white mb-4" type="date" placeholder="Date">
+                            </div>
+                            <div>
+
+                                <span id="timeError" class="error"  style="color: red;">Please enter your Time</span>
+                                <input id="time" class="border border-white mb-4" type="time"  mb-4>
+                            </div>
+
+                            <div>
+                                    <button class="form-btn" id="tableBookBtn" style=" color: orange; padding: 0.8rem;
+                                     width: 100%; background-color: white;"  >Book Now</button>
+                            </div>
+                        </form>
+                        <div class="thankYouDiv  border border-dark text-center bg-white p-2 ">
+                            <span class="close  bg-dark text-white p-2  ">X</span>
+                            <p class="display-4 text-success">Thank you for booking </p>
+                            <h3>please make your payment</h3>
+                            <button id="paymentBtn" class="btn border border-warning text-warning bg-info w-50 fs-3">Click here</button>
+                        </div>
+
+                        <div class="paymentDiv bg-white">
+                            <label for="">Name & surname</label>
+                            <input type="text" placeholder="Mohit semwal" class="payInput">
+                            <label for="">Phone Number</label>
+                            <input type="tel" placeholder="9876543210" class="payInput">
+                            <h1 class="payTitle">Card Information</h1>
+                            <div class="cardIcons">
+                                <img src="Images/master.png" width="60" alt="" class="cardIcon">
+                                <img src="Images/visa.png" width="60" alt="" class="cardIcon">
+                            </div>
+                            <input type="password" placeholder="Card Number" class="payInput">
+                            <div class="cardInfo">
+                                <input type="text" placeholder="mm" class="payInput sm">
+                                <input type="text" placeholder="yyy" class="payInput sm">
+                                <input type="text" placeholder="cvv" class="payInput sm">
+                            </div>
+                            <button class="payButton">Check Out</button>
+                            <span class="close">X</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col lg-2"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Booking end -->
+
+    <!-- Blog pages strat -->
+    <section id="Pages">
+        <div class="container mt-5 pt-5">
+            <div class="text-center ">
+                <p class="text-success fs-3">Food Blog</p>
+                <h1>Latest From Food Blog</h1>
+            </div>
+            <div class="row " style="padding: 80px 0px 30px 0;">
+                <div
+                    class=" col-sm-12 col-md-12 col-12  col-lg-6  d-flex flex-column justify-content-center align-items-center  mb-4 ">
+                    <div class="blog-img " style="margin-bottom: -5rem;">
+                        <img class="img-fluid" src="./Images/blog-1.jpg" alt="blog-1-img">
+                    </div>
+                    <div class="blog-text-div bg-white border w-75">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p class="fs-4"> Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit
+                            non
+                            vulpte liqum
+                            metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit
+                            non
+                            vulpte</p>
+                        <a href="" class="btn btn-warning p-3 btn1 "> Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-12 col-lg-6 d-flex flex-column align-items-center">
+                    <div class="blog-img" style="margin-bottom: -5rem;">
+                        <img class="img-fluid" src="./Images/blog-2.jpg" alt="blog-2-img">
+                    </div>
+                    <div class="blog-text-div bg-white border w-75  ">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p class="fs-4"> Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit
+                            non
+                            vulpte liqum
+                            metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit
+                            non
+                            vulpte</p>
+                        <a href="" class="btn btn-warning p-3 btn1 "> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog pages end -->
+
+    <!-- Contact start -->
+    <section id="Contact">
+        <div class="container">
+            <div class="text-center pt-4">
+                <p class="fs-3 text-success">Contact Us</p>
+                <h1>Contact For Any Query</h1>
+            </div>
+
+            <div class="row d-flex justify-content-center justify-content-between"
+                style="background-color: lightgray; padding: 50px 5px 20px 5px;">
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex gap-2">
+                    <div>
+                        <i class="fa-solid fa-location-dot fs-2"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-success">Address</h3>
+                        <p class="fs-5">123 Street, NY, USA</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex gap-2">
+                    <div>
+                        <i class="fa-solid fa-phone fs-2"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-success">Call Us</h3>
+                        <p class="fs-5">+012 345 6789</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex gap-2">
+                    <div>
+                        <i class="fa-solid fa-envelope fs-2"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-success">Email Us</h3>
+                        <p class="fs-5">info@example.com</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-12 d-flex gap-2">
+                    <div>
+                        <i class="fa-regular fa-hand-point-right fs-2"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-success">Follow Us</h3>
+                        <div class=" d-flex gap-3 fs-4 " style="color: orange;">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class=" col-sm-12 col-md-12 col-12 col-lg-6">
+                    <div class="contact-map-div mt-5">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0622464979!2d-74.30932615182785!3d40.697019290764416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1721106120725!5m2!1sen!2sin"
+                            width="600" height="450" style=" width: 100%;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class=" col-sm-12 col-md-12 col-12 col-lg-6"></iframe>
+                    </div>
+                </div>
+                <div class=" col-sm-12 col-md-12 col-12 col-lg-6 ">
+                    <div class="contact-form-div ">
+                        <form action="">
+                            <div>
+                                <input class=" mb-4 w-100 p-2 " type="text" placeholder="Name">
+
+                            </div>
+                            <div>
+                                <input class=" mb-4 w-100 p-2 " type="text" placeholder="Email">
+                            </div>
+                            <div>
+                                <input class=" mb-4 w-100 p-2" type="text" placeholder="Subject">
+                            </div>
+                            <div>
+                                <textarea class=" mb-4 w-75 " type="text" placeholder="Message"
+                                    style="height: 30vh;"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn1" style="border: none;">Send Message</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Contact end -->
+
+    <!-- Fotter start -->
+    <footer style="background-color: whitesmoke;">
+        <div class="container  footer-container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                    <h2 class="footer-heading">Our Address</h2>
+                    <hr style="color: green; width: 4rem;  margin-top: 0rem;">
+
+                    <div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-location-dot fs-3"></i>
+                            <p class="fs-5 pt-2 px-3">123 Street, New York, USA</p>
+                        </div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-phone fs-3"></i>
+                            <p class="fs-5 pt-2 px-3">+012 345 67890</p>
+                        </div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-envelope fs-3"></i>
+                            <p class="fs-5 pt-2 px-3">info@example.com</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 fs-4 footer-icons">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+                    <h2 class="footer-heading">Quick Links</h2>
+                    <hr style="color: rgb(14, 118, 14); width: 4rem; margin-top: 0rem;">
+
+                    <div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-greater-than"></i>
+                            <p class="fs-5 pt-2 px-3">Terms of use</p>
+                        </div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-greater-than"></i>
+                            <p class="fs-5 pt-2 px-3">Privacy policy</p>
+                        </div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-greater-than"></i>
+                            <p class="fs-5 pt-2 px-3">Cookies</p>
+                        </div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-greater-than"></i>
+                            <p class="fs-5 pt-2 px-3">Help</p>
+                        </div>
+                        <div class="d-flex align-items-center footer-icon">
+                            <i class="fa-solid fa-greater-than"></i>
+                            <p class="fs-5 pt-2 px-3">FQAs</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-5">
+                    <h2 class="footer-heading">Newsletter</h2>
+                    <hr style="color: rgb(14, 118, 14); width: 4rem; margin-top: 0rem;">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam. Tortor eu
+                            placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros.</p>
+                        <div class="footer-input-div position-relative d-flex">
+                            <input type="email" placeholder="Email goes here" class="p-4 w-100 footer-email-input ">
+                            <a href="" class="btn    btn1 footer-btn">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
